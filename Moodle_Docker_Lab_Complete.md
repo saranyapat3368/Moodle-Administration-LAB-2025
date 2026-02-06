@@ -473,7 +473,7 @@ docker volume inspect moodle-docker_moodledata
 
 ---
 
-## 6. การตั้งค่าและดูแลระบบขั้นสูง
+## 6. การตั้งค่าและดูแลระบบ
 
 ### 6.1 การตั้งค่าระบบพื้นฐาน (Site Administration)
 
@@ -482,14 +482,10 @@ docker volume inspect moodle-docker_moodledata
 1. คลิกที่ **รูปโปรไฟล์** มุมขวาบน
 2. เลือก **Site administration**
 
-หรือ
-
-1. คลิกที่ไอคอน **เกียร์** (⚙️) ด้านข้างชื่อ
-2. เลือก **Site administration**
 
 #### 6.1.2 ตั้งค่า Location Settings
 
-**เมนู:** Site administration → General → Location settings
+**เมนู:** Site administration → General-> Location -> location settings
 
 **การตั้งค่าที่แนะนำ:**
 
@@ -507,7 +503,7 @@ docker volume inspect moodle-docker_moodledata
 
 #### 6.1.3 ตั้งค่า Language
 
-**เมนู:** Site administration → Language → Language settings
+**เมนู:** Site administration → General-> Language → Language settings
 
 **การตั้งค่า:**
 1. **Default language:** English หรือ ภาษาไทย
@@ -515,7 +511,7 @@ docker volume inspect moodle-docker_moodledata
 3. **Languages on language menu:** เลือกภาษาที่ต้องการ
 
 **ติดตั้งภาษาไทย (ถ้าต้องการ):**
-1. ไปที่ Site administration → Language → Language packs
+1. ไปที่ Site administration → General -> Language → Language packs
 2. เลือก **ภาษาไทย (th)**
 3. คลิก **Install selected language pack**
 4. รอจนกว่าจะติดตั้งเสร็จ
@@ -542,7 +538,7 @@ SMTP password: your-app-password
 
 **Password Policy**
 
-เมนู: Site administration → Security → Site security settings
+เมนู: Site administration → General -> Security → Site security settings
 
 | Setting | Recommended Value |
 |---------|-------------------|
@@ -575,7 +571,7 @@ SMTP password: your-app-password
 
 **Boost Theme Settings:**
 
-Site administration → Appearance → Themes → Boost → Settings
+Site administration → Appearance → Themes → Boost → Settings **(กดที่รูปเฟือง)**
 
 | Setting | Description |
 |---------|-------------|
@@ -584,7 +580,7 @@ Site administration → Appearance → Themes → Boost → Settings
 | Raw initial SCSS | CSS เพิ่มเติม |
 | Raw SCSS | CSS เพิ่มเติม (หลังประมวลผล) |
 
-**ตัวอย่าง Custom CSS:**
+**ตัวอย่าง Custom CSS: (อยู่ที่แท็ป Advanced settings)**
 ```scss
 // เปลี่ยนสีหลัก
 $primary: #0066cc;
